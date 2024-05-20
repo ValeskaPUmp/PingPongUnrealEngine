@@ -35,7 +35,7 @@ protected:
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly)
 	float Velocity=5.;
 
-	UFUNCTION(Reliable,Server)
+	UFUNCTION(Unreliable,Server)
 	void UpdateLocation(FVector NewLocation);
 public:	
 	// Called every frame
